@@ -4,13 +4,21 @@ Sales trends, loyalty program, and refund analysis for a global e-commerce compa
 
 [View the full technical notebook](elist_analysis.ipynb)
 
-## Project Background
+## Business Problem & Context
 
-Elist is an e-commerce company that sells consumer electronics through its website and mobile app. The company has a global customer base and sells products from brands including Apple, Samsung, and ThinkPad.
+Elist is a global e-commerce company that sells consumer electronics through its website and mobile app. Founded in 2018, the company sells products from brands including Apple, Samsung, and ThinkPad across North America, EMEA, APAC, and LATAM.
 
-This analysis covers 108K orders from 2019-2022 and was completed for the Head of Operations. The goal was to understand overall sales trends, identify what drove changes in performance, evaluate the loyalty program, and examine refund rates for Apple products.
+After several years of rapid growth, Elist's leadership wanted a clearer understanding of how the business had performed from 2019 through 2022 and what was driving changes in sales. The Head of Operations also wanted to evaluate the performance of the loyalty program and better understand refund behavior for Apple products.
 
-The analysis focused on three core sales metrics: **total sales, order count, and average order value (AOV).**
+The analysis covers more than 108K orders and focuses on three core sales metrics: **total sales, order count, and average order value (AOV).**
+
+The analysis was designed to answer four business questions:
+
+1. **What were the overall trends in sales from 2019-2022?**
+2. **How did monthly and yearly sales growth change over time?**
+3. **How is the loyalty program performing, and should Elist continue using it?**
+4. **What do refund rates and AOV reveal about the performance of Apple products?**
+
 
 ## Executive Summary
 
@@ -22,7 +30,7 @@ The analysis also found a recurring seasonal pattern driven by order volume, sub
 
 ### Sales peaked in 2020 before falling sharply in 2022
 
-![Monthly sales trend](images/monthly_sales.png)
+![Monthly sales trend](images/monthly_sales_annotated.png)
 
 Sales increased 163% in 2020 as both order volume (+101%) and AOV (+31%) rose. The higher AOV was driven primarily by a shift toward higher-value products rather than broad price increases.
 
@@ -30,27 +38,41 @@ By 2022, sales had fallen 46%. The decline was primarily an order-volume problem
 
 ### Seasonal sales changes were driven by order volume
 
-![Seasonality](images/seasonality.png)
+![Seasonality](images/seasonality_annotated.png)
 
-After removing the long-term trend, December sales averaged about 23% above trend and September about 16% above trend. February and October were the weakest months.
+After removing the long-term trend, December sales averaged about 23% above trend and September about 16% above trend. February and October were the weakest months. These swings were driven primarily by changes in order volume rather than AOV.
 
-The pattern appeared across most major products and was driven primarily by changes in order volume rather than AOV. December strength is consistent with holiday shopping, while September may partly reflect back-to-school and college demand.
+The pattern appeared across most major products, but the largest dollar swings came from Elist's highest-revenue products.
 
-### Loyalty growth came from more active customers
+![Seasonal sales contribution by product](images/seasonality_products_annotated.png)
 
-![Active customers by loyalty status](images/loyalty_customers.png)
+The 4K gaming monitor contributed nearly half of September's above-normal sales and was also the largest contributor to December strength. October weakness was concentrated primarily in AirPods and the 4K monitor.
 
-The loyalty segment grew from a small base of active customers in 2019 to matching or exceeding regular customers during much of 2021 and early 2022.
+December strength is consistent with holiday shopping, while September may partly reflect back-to-school and college demand. These external patterns provide plausible context but do not establish causation. The recurring October weakness does not have a clear explanation from the available data.
 
-However, orders per active customer remained around 1.2 for both groups. Loyalty sales therefore grew mainly because Elist had more active loyalty customers and those customers eventually spent more per order, not because they purchased more frequently.
+### Loyalty sales growth came from more purchasing customers, not higher purchase frequency
 
-The available data does not show that joining the loyalty program caused the improvement, so Elist should continue tracking retention, repeat purchasing, incremental spending, and program costs.
+![Loyalty program story](images/loyalty_story_annotated.png)
+
+At first glance, the loyalty program appears to be performing strongly. Loyalty sales grew from a small base and eventually caught up to or exceeded regular-customer sales.
+
+However, the increase was driven primarily by growth in the number of loyalty customers making purchases. Purchase frequency remained nearly identical between the two groups at roughly 1.2 orders per purchasing customer per month.
+
+Sales per purchasing loyalty customer also caught up to regular customers by 2021, but this improvement came primarily from higher spending per order rather than more frequent purchases.
+
+The available data does not show that loyalty membership itself caused customers to change their purchasing behavior. Elist should continue the program for now while tracking retention, incremental spending, and program costs to better measure its impact.
 
 ### MacBook Air had the highest Apple refund risk
 
-![Apple refund rates](images/apple_refund_rates.png)
+Refunds were typically recorded about two years after purchase, which makes the more recent purchase periods incomplete.
 
-Since refunds were typically recorded about two years after purchase, this comparison focuses on 2019-2020 orders. MacBook Air had an observed refund rate of about 17%, compared with 11% for iPhone and 8% for AirPods.
+![Refund data completeness](images/refund_data_completeness_annotated.png)
+
+Observed refund rates begin falling sharply during 2021 and reach nearly 0% by the second half of the year. All 2022 purchase months show 0% observed refunds. Because of this reporting lag, the final product comparison focuses on 2019-2020 orders.
+
+![Apple refund rates](images/apple_refund_rates_annotated.png)
+
+MacBook Air had an observed refund rate of about 17%, compared with 11% for iPhone and 8% for AirPods.
 
 MacBook Air also had about $618K in sales associated with refunded orders, and its elevated refund rate appeared across every region. APAC was highest at about 22%, suggesting a broader product-level issue rather than one isolated market.
 
