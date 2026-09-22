@@ -19,7 +19,6 @@ The analysis was designed to answer four business questions:
 3. **How is the loyalty program performing, and should Elist continue using it?**
 4. **What do refund rates and AOV reveal about the performance of Apple products?**
 
-
 ## Executive Summary
 
 Elist experienced rapid growth through 2020 before sales began declining in 2021 and fell sharply in 2022. The 2022 decline was primarily driven by fewer orders rather than lower order values and became especially severe during the second half of the year.
@@ -34,13 +33,13 @@ The analysis also found a recurring seasonal pattern driven by order volume, sub
 
 Sales increased 163% in 2020 as both order volume (+101%) and AOV (+31%) rose. The higher AOV was driven primarily by a shift toward higher-value products rather than broad price increases.
 
-By 2022, sales had fallen 46%. The decline was primarily an order-volume problem: orders fell 40% while AOV declined 10%, with the slowdown becoming especially severe during the second half of the year.
+In 2022, sales fell 46% year over year. The decline was primarily an order-volume problem: orders fell 40% while AOV declined 10%, with the slowdown becoming especially severe during the second half of the year.
 
 ### Seasonal sales changes were driven by order volume
 
 ![Seasonality](images/seasonality_annotated.png)
 
-After removing the long-term trend, December sales averaged about 23% above trend and September about 16% above trend. February and October were the weakest months. These swings were driven primarily by changes in order volume rather than AOV.
+After accounting for the 12-month trend, December sales averaged about 23% above trend and September about 16% above trend. February and October were the weakest months. These swings were driven primarily by changes in order volume rather than AOV.
 
 The pattern appeared across most major products, but the largest dollar swings came from Elist's highest-revenue products.
 
@@ -84,7 +83,7 @@ The dataset does not include actual refund amounts, so the $618K represents pote
 
 - **Operations & Marketing - Plan around recurring seasonal demand.** September and December consistently outperformed trend, while February and October were weaker. Inventory and promotional activity should reflect these patterns to better prepare for stronger demand and reduce the risk of overstock during slower periods.
 
-- **Marketing / CRM - Continue the loyalty program while improving how its impact is measured.** Loyalty customers eventually matched or exceeded regular customers in sales per active customer, but purchase frequency did not increase. Elist should track retention, repeat purchasing, incremental spending, and program costs to determine whether loyalty membership is actually changing customer behavior.
+- **Marketing / CRM - Continue the loyalty program while improving how its impact is measured.** Loyalty customers eventually matched or exceeded regular customers in sales per purchasing customer, but purchase frequency did not increase. Elist should track retention, repeat purchasing, incremental spending, and program costs to determine whether loyalty membership is actually changing customer behavior.
 
 - **Product & Operations - Investigate MacBook Air refunds.** MacBook Air had the highest observed refund rate and the largest potential financial exposure among the Apple products analyzed. Refund reasons, product quality, fulfillment issues, supplier differences, and product versions should be reviewed, with additional attention given to APAC where the observed refund rate was highest.
 
