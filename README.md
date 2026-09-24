@@ -2,7 +2,7 @@
 
 Sales trends, loyalty program, and refund analysis for a global e-commerce company from 2019-2022.
 
-[View the full technical notebook](elist_analysis.ipynb)
+[View the full technical notebook](elist_analysis.ipynb) · [View the stakeholder follow-up SQL queries](stakeholder_followups.sql)
 
 ## Business Problem & Context
 
@@ -89,7 +89,9 @@ The dataset does not include actual refund amounts, so the $618K represents pote
 
 ## Data & Technical Process
 
-The source data was cleaned and analyzed primarily in Python using pandas and Matplotlib. Excel was also used during the initial data-cleaning workflow. The analysis included data-quality checks, timestamp and product-name standardization, geographic mapping, exploratory analysis, trend analysis, and customer- and product-level comparisons.
+The source data was cleaned and analyzed primarily in Python using pandas and Matplotlib. Excel was also used during the initial data-cleaning workflow. The analysis included data-quality checks, timestamp and product-name standardization, geographic mapping, exploratory analysis, trend analysis, and customer- and product-level comparisons. 
+
+Five follow-up questions from the Head of Operations were answered in BigQuery SQL, covering MacBook sales, delivery times, refunds, regional product popularity, and loyalty purchasing behavior.
 
 The ERD below shows the structure of the source data.
 
