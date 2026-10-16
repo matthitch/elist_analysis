@@ -67,11 +67,11 @@ Refunds were typically recorded about two years after purchase, which makes the 
 
 ![Refund data completeness](images/refund_data_completeness_annotated.png)
 
-Observed refund rates begin falling sharply during 2021 and reach nearly 0% by the second half of the year. All 2022 purchase months show 0% observed refunds. Because of this reporting lag, the final product comparison focuses on 2019-2020 orders.
+Observed refund rates begin falling sharply during 2021 and reach nearly 0% by the second half of the year. All 2022 purchase months show 0% observed refunds. The refund-risk evaluation therefore focuses on the more mature 2019-2020 purchase cohorts. 2021 is shown for context in the yearly product comparison but should be treated as incomplete, while 2022 is excluded from refund-rate comparisons.
 
 ![Apple refund rates](images/apple_refund_rates_annotated.png)
 
-MacBook Air had an observed refund rate of about 17%, compared with 11% for iPhone and 8% for AirPods.
+MacBook Air had the highest observed refund rate in both complete years, at about 18% in 2019 and 17% in 2020. Across the combined 2019-2020 cohorts, its observed refund rate was about 17%, compared with 11% for iPhone and 8% for AirPods. The lower 2021 rates are incomplete and should not be interpreted as improvement.
 
 MacBook Air also had about $618K in sales associated with refunded orders, and its elevated refund rate appeared across every region. APAC was highest at about 22%, suggesting a broader product-level issue rather than one isolated market.
 
